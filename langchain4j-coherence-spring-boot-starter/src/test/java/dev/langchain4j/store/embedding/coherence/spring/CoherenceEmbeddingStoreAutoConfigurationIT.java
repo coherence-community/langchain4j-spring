@@ -19,8 +19,6 @@ import dev.langchain4j.store.embedding.spring.EmbeddingStoreAutoConfigurationIT;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 
 class CoherenceEmbeddingStoreAutoConfigurationIT extends EmbeddingStoreAutoConfigurationIT {
 

@@ -1,12 +1,11 @@
 package dev.langchain4j.store.embedding.coherence.spring;
 
-import dev.langchain4j.store.embedding.coherence.CoherenceEmbeddingStore;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * The configuration properties for a {@link CoherenceEmbeddingStore}.
+ * The configuration properties for a {@link dev.langchain4j.store.embedding.coherence.CoherenceEmbeddingStore}.
  */
 @ConfigurationProperties(prefix = CoherenceEmbeddingStoreProperties.PREFIX)
 @Getter

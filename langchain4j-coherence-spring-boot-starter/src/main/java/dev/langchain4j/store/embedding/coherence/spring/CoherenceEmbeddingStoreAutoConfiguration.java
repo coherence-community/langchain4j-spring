@@ -44,7 +44,6 @@ public class CoherenceEmbeddingStoreAutoConfiguration
     @ConditionalOnMissingBean
     @SuppressWarnings({"rawtypes", "unchecked"})
     public CoherenceEmbeddingStore coherenceEmbeddingStore(CoherenceEmbeddingStoreProperties properties,
-                                                   Coherence coherence,
                                                    @Nullable EmbeddingModel embeddingModel) {
 
         String session = Optional.ofNullable(properties.getSession()).orElse(Coherence.DEFAULT_NAME);

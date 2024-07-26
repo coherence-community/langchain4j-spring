@@ -1,1 +1,2 @@
 dev.langchain4j.store.embedding.redis.spring.CoherenceEmbeddingStoreAutoConfiguration
+dev.langchain4j.store.memory.chat.coherence.CoherenceChatMemoryStore
