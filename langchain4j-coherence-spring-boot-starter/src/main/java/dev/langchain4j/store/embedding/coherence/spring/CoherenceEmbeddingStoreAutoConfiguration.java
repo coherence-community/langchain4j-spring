@@ -50,7 +50,7 @@ public class CoherenceEmbeddingStoreAutoConfiguration
         String cache = Optional.ofNullable(properties.getName()).orElse(CoherenceEmbeddingStore.DEFAULT_MAP_NAME);
         String index = properties.getIndex();
         boolean force = properties.isForceNormalize();
-        Integer dimension = Optional.ofNullable(properties.getDimension()).orElseGet(() -> embeddingModel == null ? null : embeddingModel.dimension());
+        Integer dimension = embeddingModel == null ? properties.getDimension() : (Integer) embeddingModel.dimension();
 
         VectorIndexExtractor extractor = null;
 

@@ -39,6 +39,9 @@ public class CoherenceEmbeddingStoreProperties
 
     /**
      * The number of dimensions in the embeddings.
+     * <p>
+     * If the embedding store is created with an embedding model, the model's dimensions
+     * will take precedence over this property.
      */
     private Integer dimension;
 }
